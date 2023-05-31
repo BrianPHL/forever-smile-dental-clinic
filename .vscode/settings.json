@@ -1,0 +1,19 @@
+{
+
+    "liveSassCompile.settings.formats": [
+        
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "/public/styles"
+
+        }
+        
+    ],
+    "liveSassCompile.settings.excludeList": [
+        "/node_modules",
+        "/.vscode"
+    ],
+    "liveSassCompile.settings.forceBaseDirectory": "/src/styles"
+
+}
