@@ -1,0 +1,9 @@
+html[data-site="landing"] {
+
+    & > body {
+ 
+        background-color: var(--bg-secondary);
+
+    }
+
+}

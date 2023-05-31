@@ -1,0 +1,19 @@
+html[data-theme="light"] {
+
+    --bg-primary: #EEEEEE;
+    --bg-secondary: #EAEAEA;
+    --tg-primary: #131313;
+    --tg-secondary: #191919;
+    --accent: #50AF26;
+
+}
+
+html[data-theme="dark"] {
+
+    --bg-primary: #131313;
+    --bg-secondary: #191919;
+    --tg-primary: #EEEEEE;
+    --tg-secondary: #EAEAEA;
+    --accent: #50AF26;
+
+}
