@@ -1,0 +1,20 @@
+button {
+
+    background-color: transparent;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: 0.2s ease;
+    font-size: 12px;
+    padding: 12px 32px 12px 32px;
+    border: 2px solid #EEEEEE;
+    color: #EEEEEE;
+
+    &:hover {
+
+        background-color: #EEEEEE;
+        cursor: pointer;
+        color: var(--accent);
+
+    }
+
+}
