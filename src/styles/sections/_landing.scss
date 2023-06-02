@@ -64,6 +64,92 @@ html[data-site="landing"] {
 
         }
 
+        & > .hero {
+
+            background-image: url('/static/assets/webp/landing_hero_bg.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: 92vh;
+            width: 100vw;
+
+            & > .container {
+
+                background-color: rgba($color: #000000, $alpha: 0.7);
+                align-content: center;
+                padding: 0px 128px 0px 128px;
+                display: grid;
+                height: inherit;
+                width: 100vw;
+
+                & > .headline {
+                    
+                    flex-direction: column;
+                    display: flex;
+                    gap: 32px;
+
+                    & > .cta {
+
+                        align-items: center;
+                        display: flex;
+                        gap: 16px;
+
+                        & > button {
+
+                            align-items: center;
+                            display: flex;
+                            gap: 8px;
+
+                        }
+
+                        & > a { 
+                        
+                            font-size: 12px; 
+                        
+                        }
+
+                    }
+
+                }
+
+            }
+
+            & > .info {
+
+                justify-content: center;
+                background-color: #131313;
+                align-items: center;
+                display: flex;
+                padding: 0px 128px 0px 128px;
+                height: 8vh;
+                gap: 64px;
+
+                & > i {
+
+                    font-size: 16px;
+                    color: var(--accent);
+
+                }
+
+                & > div {
+
+                    align-items: center;
+                    display: flex;
+                    gap: 8px;
+
+                    & > i {
+
+                        font-size: 16px;
+                        color: var(--accent);
+
+                    }   
+
+                }
+
+            }
+
+        }
+
     }
 
 }
