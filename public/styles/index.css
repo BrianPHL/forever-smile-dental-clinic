@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("/static/styles/icons/css/all.css");
 html[data-theme=light] {
   --bg-primary: #EEEEEE;
   --bg-secondary: #EAEAEA;
@@ -15,6 +16,67 @@ html[data-theme=dark] {
   --accent: #50AF26;
 }
 
+h1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--tg-primary);
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--tg-primary);
+}
+
+h3, p {
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--tg-secondary);
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--tg-secondary);
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 10px;
+  color: var(--tg-secondary);
+}
+
+a {
+  text-decoration: none;
+  font-weight: 400;
+  transition: 0.2s ease;
+  font-size: 16px;
+  color: var(--tg-secondary);
+}
+a:hover {
+  color: var(--accent);
+}
+
+button {
+  background-color: transparent;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: 0.2s ease;
+  font-size: 12px;
+  padding: 12px 32px 12px 32px;
+  border: 2px solid #EEEEEE;
+  color: #EEEEEE;
+}
+button:hover {
+  background-color: #EEEEEE;
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.accent {
+  color: var(--accent);
+}
+
 * {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
@@ -24,4 +86,96 @@ html[data-theme=dark] {
 
 html[data-site=landing] > body {
   background-color: var(--bg-secondary);
+}
+html[data-site=landing] > body > header {
+  justify-content: space-between;
+  position: fixed;
+  display: flex;
+  padding: 32px 128px 32px 128px;
+  width: 100%;
+}
+html[data-site=landing] > body > header h2 {
+  color: #EEEEEE;
+}
+html[data-site=landing] > body > header > .actions {
+  align-items: center;
+  display: flex;
+  gap: 64px;
+}
+html[data-site=landing] > body > header > .actions > nav {
+  display: flex;
+  gap: 32px;
+}
+html[data-site=landing] > body > header > .actions > nav > a {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+html[data-site=landing] > body > header > .actions > nav > a > i {
+  font-size: 12px;
+}
+html[data-site=landing] > body > header > .actions > i {
+  font-size: 20px;
+  transition: 0.2s ease;
+  color: #EEEEEE;
+}
+html[data-site=landing] > body > header > .actions > i:hover {
+  cursor: pointer;
+  color: var(--accent);
+}
+html[data-site=landing] > body > .hero {
+  background-image: url("/static/assets/webp/landing_hero_bg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 92vh;
+  width: 100vw;
+}
+html[data-site=landing] > body > .hero > .container {
+  background-color: rgba(0, 0, 0, 0.7);
+  align-content: center;
+  padding: 0px 128px 0px 128px;
+  display: grid;
+  height: inherit;
+  width: 100vw;
+}
+html[data-site=landing] > body > .hero > .container > .headline {
+  flex-direction: column;
+  display: flex;
+  gap: 32px;
+}
+html[data-site=landing] > body > .hero > .container > .headline > .cta {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+html[data-site=landing] > body > .hero > .container > .headline > .cta > button {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+html[data-site=landing] > body > .hero > .container > .headline > .cta > a {
+  font-size: 12px;
+}
+html[data-site=landing] > body > .hero > .info {
+  justify-content: center;
+  background-color: #131313;
+  align-items: center;
+  display: flex;
+  padding: 0px 128px 0px 128px;
+  height: 8vh;
+  gap: 64px;
+}
+html[data-site=landing] > body > .hero > .info > i {
+  font-size: 16px;
+  color: var(--accent);
+}
+html[data-site=landing] > body > .hero > .info > div {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+html[data-site=landing] > body > .hero > .info > div > i {
+  font-size: 16px;
+  color: var(--accent);
 }/*# sourceMappingURL=index.css.map */
