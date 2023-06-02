@@ -4,6 +4,66 @@ html[data-site="landing"] {
  
         background-color: var(--bg-secondary);
 
+        & > header {
+
+            justify-content: space-between;
+            position: fixed;
+            display: flex;
+            padding: 32px 128px 32px 128px;
+            width: 100%;
+
+            h2 {
+
+                color: #EEEEEE;
+
+            }
+
+            & > .actions {
+
+                align-items: center;
+                display: flex;
+                gap: 64px;
+
+                & > nav {
+
+                    display: flex;
+                    gap: 32px;
+
+                    & > a {
+
+                        align-items: center;
+                        display: flex;
+                        gap: 8px;
+
+                        & > i {
+
+                            font-size: 12px;
+
+                        }
+
+                    }
+
+                }
+
+                & > i {
+
+                    font-size: 20px;
+                    transition: 0.2s ease;
+                    color: #EEEEEE;
+
+                    &:hover {
+
+                        cursor: pointer;
+                        color: var(--accent);
+
+                    }
+
+                }
+
+            }
+
+        }
+
     }
 
 }
