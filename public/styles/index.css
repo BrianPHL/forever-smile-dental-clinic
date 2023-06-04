@@ -1,76 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 @import url("/static/styles/icons/css/all.css");
 html[data-theme=light] {
-  --bg-primary: #EEEEEE;
-  --bg-secondary: #EAEAEA;
-  --tg-primary: #131313;
-  --tg-secondary: #191919;
-  --accent: #50AF26;
+  --bg-primary: #e5e5e5;
+  --bg-secondary: #dddddd;
+  --tg-primary: #222222;
+  --tg-secondary: #666666;
+  --accent: #79c557;
 }
 
 html[data-theme=dark] {
-  --bg-primary: #131313;
-  --bg-secondary: #191919;
-  --tg-primary: #EEEEEE;
-  --tg-secondary: #EAEAEA;
-  --accent: #50AF26;
-}
-
-h1 {
-  font-weight: 700;
-  font-size: 32px;
-  color: var(--tg-primary);
-}
-
-h2 {
-  font-weight: 500;
-  font-size: 24px;
-  color: var(--tg-primary);
-}
-
-h3, p {
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--tg-secondary);
-}
-
-h4 {
-  font-weight: 400;
-  font-size: 12px;
-  color: var(--tg-secondary);
-}
-
-h5 {
-  font-weight: 300;
-  font-size: 10px;
-  color: var(--tg-secondary);
-}
-
-a {
-  text-decoration: none;
-  font-weight: 400;
-  transition: 0.2s ease;
-  font-size: 16px;
-  color: var(--tg-secondary);
-}
-a:hover {
-  color: var(--accent);
-}
-
-button {
-  background-color: transparent;
-  border-radius: 4px;
-  font-weight: 500;
-  transition: 0.2s ease;
-  font-size: 12px;
-  padding: 12px 32px 12px 32px;
-  border: 2px solid #EEEEEE;
-  color: #EEEEEE;
-}
-button:hover {
-  background-color: #EEEEEE;
-  cursor: pointer;
-  color: var(--accent);
+  --bg-primary: #111111;
+  --bg-secondary: #151515;
+  --tg-primary: #e5e5e5;
+  --tg-secondary: #aaaaaa;
+  --accent: #79c557;
 }
 
 .accent {
@@ -88,53 +31,101 @@ html[data-site=landing] > body {
   background-color: var(--bg-secondary);
 }
 html[data-site=landing] > body > header {
-  justify-content: space-between;
+  flex-direction: column;
   position: fixed;
+  padding: 32px 8vw;
   display: flex;
-  padding: 32px 128px 32px 128px;
   width: 100%;
+  gap: 8px;
 }
-html[data-site=landing] > body > header h2 {
-  color: #EEEEEE;
-}
-html[data-site=landing] > body > header > .actions {
+html[data-site=landing] > body > header > .info {
+  justify-content: space-between;
   align-items: center;
   display: flex;
-  gap: 64px;
 }
-html[data-site=landing] > body > header > .actions > nav {
-  display: flex;
-  gap: 32px;
-}
-html[data-site=landing] > body > header > .actions > nav > a {
+html[data-site=landing] > body > header > .info > .clinicHours {
   align-items: center;
   display: flex;
   gap: 8px;
 }
-html[data-site=landing] > body > header > .actions > nav > a > i {
+html[data-site=landing] > body > header > .info > .clinicHours > i {
+  color: var(--accent);
+}
+html[data-site=landing] > body > header > .info > .clinicHours > label {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+html[data-site=landing] > body > header > .info > .details {
+  align-items: center;
+  display: flex;
+  gap: 16px;
+}
+html[data-site=landing] > body > header > .info > .details > div {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+html[data-site=landing] > body > header > .info > .details > div > i {
+  color: var(--accent);
+}
+html[data-site=landing] > body > header > .info > .details > div > label {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+html[data-site=landing] > body > header > .heading {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+html[data-site=landing] > body > header > .heading > h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #e5e5e5;
+}
+html[data-site=landing] > body > header > .heading > .cta {
+  align-items: center;
+  display: flex;
+  gap: 32px;
+}
+html[data-site=landing] > body > header > .heading > .cta > nav {
+  display: flex;
+  gap: 16px;
+}
+html[data-site=landing] > body > header > .heading > .cta > nav > a {
+  text-decoration: none;
+  align-items: center;
+  transition: 0.2s ease;
+  display: flex;
+  color: #e5e5e5;
+  gap: 8px;
+}
+html[data-site=landing] > body > header > .heading > .cta > nav > a:hover {
+  color: var(--accent);
+}
+html[data-site=landing] > body > header > .heading > .cta > nav > a > i {
   font-size: 12px;
 }
-html[data-site=landing] > body > header > .actions > i {
-  font-size: 20px;
+html[data-site=landing] > body > header > .heading > .cta > i {
   transition: 0.2s ease;
-  color: #EEEEEE;
+  font-size: 24px;
+  color: #e5e5e5;
 }
-html[data-site=landing] > body > header > .actions > i:hover {
+html[data-site=landing] > body > header > .heading > .cta > i:hover {
   cursor: pointer;
   color: var(--accent);
 }
 html[data-site=landing] > body > .hero {
   background-image: url("/static/assets/webp/landing_hero_bg.webp");
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 92vh;
+  height: 100vh;
   width: 100vw;
 }
 html[data-site=landing] > body > .hero > .container {
   background-color: rgba(0, 0, 0, 0.7);
   align-content: center;
-  padding: 0px 128px 0px 128px;
+  padding: 0px 8vw;
   display: grid;
   height: inherit;
   width: 100vw;
@@ -144,38 +135,91 @@ html[data-site=landing] > body > .hero > .container > .headline {
   display: flex;
   gap: 32px;
 }
+html[data-site=landing] > body > .hero > .container > .headline > .text {
+  flex-direction: column;
+  display: flex;
+}
+html[data-site=landing] > body > .hero > .container > .headline > .text > div {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+html[data-site=landing] > body > .hero > .container > .headline > .text > div > i {
+  color: var(--accent);
+}
+html[data-site=landing] > body > .hero > .container > .headline > .text > div > label {
+  font-size: 12px;
+  color: #aaaaaa;
+}
+html[data-site=landing] > body > .hero > .container > .headline > .text > h1 {
+  font-size: 32px;
+  color: #e5e5e5;
+}
+html[data-site=landing] > body > .hero > .container > .headline > .text > h2 {
+  font-weight: 500;
+  font-size: 16px;
+  color: #e5e5e5;
+}
 html[data-site=landing] > body > .hero > .container > .headline > .cta {
   align-items: center;
   display: flex;
   gap: 16px;
 }
 html[data-site=landing] > body > .hero > .container > .headline > .cta > button {
+  background-color: transparent;
+  border-radius: 4px;
   align-items: center;
+  font-weight: 500;
+  transition: 0.2s ease;
+  font-size: 12px;
   display: flex;
+  padding: 12px 32px 12px 32px;
+  border: 2px solid var(--bg-primary);
   gap: 8px;
+  color: var(--bg-primary);
+  border: 2px solid #e5e5e5;
+  color: #e5e5e5;
+}
+html[data-site=landing] > body > .hero > .container > .headline > .cta > button:hover {
+  background-color: var(--bg-primary);
+  cursor: pointer;
+  color: var(--accent);
+}
+html[data-site=landing] > body > .hero > .container > .headline > .cta > button:hover {
+  background-color: #e5e5e5;
 }
 html[data-site=landing] > body > .hero > .container > .headline > .cta > a {
+  text-decoration: none;
+  transition: 0.2s ease;
   font-size: 12px;
+  color: #e5e5e5;
+}
+html[data-site=landing] > body > .hero > .container > .headline > .cta > a:hover {
+  color: var(--accent);
 }
 html[data-site=landing] > body > .hero > .info {
-  justify-content: center;
-  background-color: #131313;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10vw;
+  display: flex;
+}
+html[data-site=landing] > body > .hero > .info > .details {
+  background-color: var(--bg-primary);
   align-items: center;
   display: flex;
-  padding: 0px 128px 0px 128px;
   height: 8vh;
-  gap: 64px;
+  gap: 32px;
 }
-html[data-site=landing] > body > .hero > .info > i {
-  font-size: 16px;
-  color: var(--accent);
-}
-html[data-site=landing] > body > .hero > .info > div {
+html[data-site=landing] > body > .hero > .info > .details > div {
   align-items: center;
   display: flex;
-  gap: 8px;
+  gap: 16px;
 }
-html[data-site=landing] > body > .hero > .info > div > i {
-  font-size: 16px;
+html[data-site=landing] > body > .hero > .info > .details > div > i {
   color: var(--accent);
+}
+html[data-site=landing] > body > .hero > .info > .details > div > label {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--tg-secondary);
 }/*# sourceMappingURL=index.css.map */
