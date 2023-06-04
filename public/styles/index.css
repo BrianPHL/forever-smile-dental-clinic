@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
-@import url("/static/styles/icons/css/all.css");
+@import url("/static/styles/icons/css/all.min.css");
 html[data-theme=light] {
   --bg-primary: #e5e5e5;
   --bg-secondary: #dddddd;
