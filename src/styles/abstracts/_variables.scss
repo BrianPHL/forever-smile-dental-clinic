@@ -1,19 +1,29 @@
 html[data-theme="light"] {
 
-    --bg-primary: #EEEEEE;
-    --bg-secondary: #EAEAEA;
-    --tg-primary: #131313;
-    --tg-secondary: #191919;
-    --accent: #50AF26;
+    // ? Light mode variables
+
+    --bg-primary: #e5e5e5;
+    --bg-secondary: #dddddd;
+
+    --tg-primary: #222222;
+    --tg-secondary: #666666;
+    
+    --accent: #79c557;
 
 }
 
 html[data-theme="dark"] {
 
-    --bg-primary: #131313;
-    --bg-secondary: #191919;
-    --tg-primary: #EEEEEE;
-    --tg-secondary: #EAEAEA;
-    --accent: #50AF26;
+    // ? Dark mode variables
+
+    --bg-primary: #111111;
+    --bg-secondary: #151515;
+
+    --tg-primary: #e5e5e5;
+    --tg-secondary: #aaaaaa;
+    
+    --accent: #79c557;
 
 }
+
+.accent { color: var(--accent); }
