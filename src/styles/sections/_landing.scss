@@ -3,13 +3,14 @@ html[data-site="landing"] {
     & > body {
  
         background-color: var(--bg-secondary);
+        overflow-x: hidden;
 
         & > header {
 
             background-color: transparent;
             justify-content: space-between;
             position: fixed;
-            padding: 32px 8vw;
+            padding: 32px 12vw;
             display: flex;
             width: 100%;
             
@@ -92,7 +93,7 @@ html[data-site="landing"] {
                 grid-template-rows: 12vh 2fr auto;
                 background-color: rgba($color: var(--bg-primary-rgb), $alpha: var(--bg-opacity));
                 flex-direction: column;
-                padding: 0 8vw;
+                padding: 0 12vw;
                 display: grid;
                 height: 100%;
                 width: 100vw;
@@ -223,7 +224,7 @@ html[data-site="landing"] {
                     flex-direction: column;
                     align-items: center;
                     grid-row: 3;
-                    padding: 32px 8vw;
+                    padding: 32px 12vw;
                     display: flex;
                     gap: 8px;
 
@@ -264,6 +265,116 @@ html[data-site="landing"] {
                     }
 
                 } 
+
+            }
+
+        }
+
+        & > .services {
+
+            flex-direction: column;
+            padding: 8vh 12vw;
+            display: flex;
+            gap: 8vh;
+
+            & > .headline {
+
+                flex-direction: column;
+                display: flex;
+                gap: 4vh;
+
+                & > .heading {
+
+                    & > h2 {
+
+                        font-weight: 700;
+                        font-size: 24px;
+                        color: var(--tg-primary);
+
+                    }
+
+                    & > h3 {
+
+                        font-weight: 500;
+                        font-size: 16px;
+                        color: var(--tg-primary);
+
+                    }
+
+                }
+
+                & > p {
+
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: var(--tg-secondary);
+
+                }
+
+            }
+
+            & > .offers {
+
+                grid-template-columns: repeat(3, 1fr);
+                display: grid;
+                gap: 32px;
+
+                & > .offer {
+
+                    flex-direction: column;
+                    flex-basis: 31.95%;
+                    min-width: 0;
+                    display: flex;
+                    padding: 24px;
+                    gap: 16px;
+
+                    & > .headline {
+
+                        & > h4 {
+
+                            font-weight: 500;
+                            font-size: 16px;
+                            color: var(--tg-primary);
+
+                        }
+
+                        & > h5 {
+
+                            font-weight: 300;
+                            font-size: 12px;
+                            color: var(--tg-primary);
+
+                        }
+
+                    }
+
+                    & > p {
+
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        font-weight: 400;
+                        font-size: 14px;
+                        color: var(--tg-secondary);
+
+                    }
+
+                    & > button {
+
+                        @include button-style;
+                        border: 2px solid var(--tg-primary);
+                        align-self: flex-start;
+                        color: var(--tg-primary);
+
+                        &:hover {
+
+                            background-color: var(--tg-primary);
+
+                        }
+
+                    }
+                    
+                }
 
             }
 
