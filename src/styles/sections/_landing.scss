@@ -6,133 +6,68 @@ html[data-site="landing"] {
 
         & > header {
 
-            flex-direction: column;
+            background-color: transparent;
+            justify-content: space-between;
             position: fixed;
             padding: 32px 8vw;
             display: flex;
             width: 100%;
-            gap: 8px;
+            
+            & > h2 {
 
-            & > .info {
-
-                justify-content: space-between;
-                align-items: center;
-                display: flex;
-
-                & > .clinicHours {
-
-                    align-items: center;
-                    display: flex;
-                    gap: 8px;
-
-                    & > i {
-
-                        color: var(--accent);
-
-                    }
-
-                    & > label {
-
-                        font-size: 12px;
-                        color: #aaaaaa;
-
-                    }
-
-                }
-
-                & > .details {
-
-                    align-items: center;
-                    display: flex;
-                    gap: 16px;
-
-                    & > div {
-
-                        align-items: center;
-                        display: flex;
-                        gap: 8px;
-    
-                        & > i {
-    
-                            color: var(--accent);
-    
-                        }
-    
-                        & > label {
-    
-                            font-size: 12px;
-                            color: #aaaaaa;
-    
-                        }
-
-                    }
-
-                }
+                font-weight: 700;
+                font-size: 24px;
+                color: var(--tg-primary);
 
             }
 
-            & > .heading {
+            & > .cta {
 
-                justify-content: space-between;
                 align-items: center;
                 display: flex;
+                gap: 32px;
 
-                & > h2 {
+                & > nav {
 
-                    font-weight: 700;
-                    font-size: 24px;
-                    color: #e5e5e5;
-
-                }
-
-                & > .cta {
-
-                    align-items: center;
                     display: flex;
-                    gap: 32px;
+                    gap: 16px;
 
-                    & > nav {
+                    & > a {
 
+                        text-decoration: none;
+                        align-items: center;
+                        transition: 0.2s ease;
+                        font-size: 14px;
                         display: flex;
-                        gap: 16px;
+                        color: var(--tg-primary);
+                        gap: 8px;
 
-                        & > a {
+                        &:hover {
 
-                            text-decoration: none;
-                            align-items: center;
-                            transition: 0.2s ease;
-                            display: flex;
-                            color: #e5e5e5;
-                            gap: 8px;
+                            color: var(--accent);
 
-                            &:hover {
+                        }
 
-                                color: var(--accent);
+                        & > i {
 
-                            }
-
-                            & > i {
-
-                                font-size: 12px;
-
-                            }
+                            font-size: 12px;
 
                         }
 
                     }
 
-                    & > i {
+                }
 
-                        transition: 0.2s ease;
-                        font-size: 24px;
-                        color: #e5e5e5;
+                & > i {
 
-                        &:hover {
+                    transition: 0.2s ease;
+                    font-size: 24px;
+                    color: var(--tg-primary);
 
-                            cursor: pointer;
-                            color: var(--accent);
+                    &:hover {
 
-                        }
+                        cursor: pointer;
+                        color: var(--accent);
 
                     }
 
@@ -153,16 +88,20 @@ html[data-site="landing"] {
 
             & > .container {
 
-                background-color: rgba($color: #000000, $alpha: 0.7);
-                align-content: center;
-                padding: 0px 8vw;
+                grid-template-columns: 100%;
+                grid-template-rows: 12vh 2fr auto;
+                background-color: rgba($color: var(--bg-primary-rgb), $alpha: var(--bg-opacity));
+                flex-direction: column;
+                padding: 0 8vw;
                 display: grid;
-                height: inherit;
+                height: 100%;
                 width: 100vw;
 
                 & > .headline {
 
+                    justify-content: center;
                     flex-direction: column;
+                    grid-row: 2;
                     display: flex;
                     gap: 32px;
 
@@ -185,8 +124,9 @@ html[data-site="landing"] {
         
                             & > label {
         
+                                font-weight: 300;
                                 font-size: 12px;
-                                color: #aaaaaa;
+                                color: var(--tg-primary);
         
                             }
     
@@ -195,7 +135,7 @@ html[data-site="landing"] {
                         & > h1 {
 
                             font-size: 32px;
-                            color: #e5e5e5;
+                            color: var(--tg-primary);
 
                         }
 
@@ -203,7 +143,36 @@ html[data-site="landing"] {
 
                             font-weight: 500;
                             font-size: 16px;
-                            color: #e5e5e5;
+                            color: var(--tg-primary);
+
+                        }
+
+                    }
+
+                    & > .info {
+
+                        flex-direction: column;
+                        display: flex;
+                        gap: 8px;
+
+                        & > div {
+
+                            align-items: center;
+                            display: flex;
+                            gap: 8px;
+
+                            & > i {
+
+                                color: var(--accent);
+
+                            }
+
+                            & > label {
+    
+                                font-size: 12px;
+                                color: var(--tg-primary);
+        
+                            }
 
                         }
 
@@ -218,12 +187,12 @@ html[data-site="landing"] {
                         & > button {
 
                             @include button-style;
-                            border: 2px solid #e5e5e5;
-                            color: #e5e5e5;
+                            border: 2px solid var(--tg-primary);
+                            color: var(--tg-primary);
 
                             &:hover {
 
-                                background-color: #e5e5e5;
+                                background-color: var(--tg-primary);
 
                             }
 
@@ -234,7 +203,7 @@ html[data-site="landing"] {
                             text-decoration: none;
                             transition: 0.2s ease;
                             font-size: 12px;
-                            color: #e5e5e5;
+                            color: var(--tg-primary);
 
                             &:hover {
 
@@ -248,46 +217,53 @@ html[data-site="landing"] {
 
                 }
 
-            }
+                & > .readMore {
 
-            & > .info {
-
-                justify-content: space-between;
-                align-items: center;
-                padding: 0 10vw;
-                display: flex;
-                
-                & > .details {
-
-                    background-color: var(--bg-primary);
+                    justify-content: center;
+                    flex-direction: column;
                     align-items: center;
+                    grid-row: 3;
+                    padding: 32px 8vw;
                     display: flex;
-                    height: 8vh;
-                    gap: 32px;
-    
-                    & > div {
-    
+                    gap: 8px;
+
+                    & > .container {
+
+                        flex-direction: column;
                         align-items: center;
                         display: flex;
-                        gap: 16px;
-    
-                        & > i {
-    
-                            color: var(--accent);
-    
-                        }
-    
+                        gap: 8px;
+
                         & > label {
-    
-                            font-weight: 400;
+
+                            transition: 0.2s ease;
                             font-size: 12px;
-                            color: var(--tg-secondary);
-    
+                            color: var(--tg-primary);
+
                         }
-    
+
+                        & > i {
+
+                            transition: 0.2s ease;
+                            font-size: 16px;
+                            color: var(--tg-primary);
+
+                        }
+
+                        &:hover {
+
+                            & > label, & > i {
+
+                                cursor: pointer;
+                                color: var(--accent);
+
+                            }
+                        
+                        }
+
                     }
 
-                }
+                } 
 
             }
 

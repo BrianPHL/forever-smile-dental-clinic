@@ -2,13 +2,15 @@ html[data-theme="light"] {
 
     // ? Light mode variables
 
+    --bg-opacity: 0.7;
     --bg-primary: #e5e5e5;
     --bg-secondary: #dddddd;
+    --bg-primary-rgb: 221, 221, 221;
 
     --tg-primary: #222222;
     --tg-secondary: #666666;
     
-    --accent: #79c557;
+    --accent: #57a533;
 
 }
 
@@ -16,8 +18,10 @@ html[data-theme="dark"] {
 
     // ? Dark mode variables
 
+    --bg-opacity: 0.7;
     --bg-primary: #111111;
     --bg-secondary: #151515;
+    --bg-primary-rgb: 17, 17, 17;
 
     --tg-primary: #e5e5e5;
     --tg-secondary: #aaaaaa;

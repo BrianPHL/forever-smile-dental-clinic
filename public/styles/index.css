@@ -1,16 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 @import url("/static/styles/icons/css/all.min.css");
 html[data-theme=light] {
+  --bg-opacity: 0.7;
   --bg-primary: #e5e5e5;
   --bg-secondary: #dddddd;
+  --bg-primary-rgb: 221, 221, 221;
   --tg-primary: #222222;
   --tg-secondary: #666666;
-  --accent: #79c557;
+  --accent: #57a533;
 }
 
 html[data-theme=dark] {
+  --bg-opacity: 0.7;
   --bg-primary: #111111;
   --bg-secondary: #151515;
+  --bg-primary-rgb: 17, 17, 17;
   --tg-primary: #e5e5e5;
   --tg-secondary: #aaaaaa;
   --accent: #79c557;
@@ -31,86 +35,48 @@ html[data-site=landing] > body {
   background-color: var(--bg-secondary);
 }
 html[data-site=landing] > body > header {
-  flex-direction: column;
+  background-color: transparent;
+  justify-content: space-between;
   position: fixed;
   padding: 32px 8vw;
   display: flex;
   width: 100%;
-  gap: 8px;
 }
-html[data-site=landing] > body > header > .info {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-}
-html[data-site=landing] > body > header > .info > .clinicHours {
-  align-items: center;
-  display: flex;
-  gap: 8px;
-}
-html[data-site=landing] > body > header > .info > .clinicHours > i {
-  color: var(--accent);
-}
-html[data-site=landing] > body > header > .info > .clinicHours > label {
-  font-size: 12px;
-  color: #aaaaaa;
-}
-html[data-site=landing] > body > header > .info > .details {
-  align-items: center;
-  display: flex;
-  gap: 16px;
-}
-html[data-site=landing] > body > header > .info > .details > div {
-  align-items: center;
-  display: flex;
-  gap: 8px;
-}
-html[data-site=landing] > body > header > .info > .details > div > i {
-  color: var(--accent);
-}
-html[data-site=landing] > body > header > .info > .details > div > label {
-  font-size: 12px;
-  color: #aaaaaa;
-}
-html[data-site=landing] > body > header > .heading {
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-}
-html[data-site=landing] > body > header > .heading > h2 {
+html[data-site=landing] > body > header > h2 {
   font-weight: 700;
   font-size: 24px;
-  color: #e5e5e5;
+  color: var(--tg-primary);
 }
-html[data-site=landing] > body > header > .heading > .cta {
+html[data-site=landing] > body > header > .cta {
   align-items: center;
   display: flex;
   gap: 32px;
 }
-html[data-site=landing] > body > header > .heading > .cta > nav {
+html[data-site=landing] > body > header > .cta > nav {
   display: flex;
   gap: 16px;
 }
-html[data-site=landing] > body > header > .heading > .cta > nav > a {
+html[data-site=landing] > body > header > .cta > nav > a {
   text-decoration: none;
   align-items: center;
   transition: 0.2s ease;
+  font-size: 14px;
   display: flex;
-  color: #e5e5e5;
+  color: var(--tg-primary);
   gap: 8px;
 }
-html[data-site=landing] > body > header > .heading > .cta > nav > a:hover {
+html[data-site=landing] > body > header > .cta > nav > a:hover {
   color: var(--accent);
 }
-html[data-site=landing] > body > header > .heading > .cta > nav > a > i {
+html[data-site=landing] > body > header > .cta > nav > a > i {
   font-size: 12px;
 }
-html[data-site=landing] > body > header > .heading > .cta > i {
+html[data-site=landing] > body > header > .cta > i {
   transition: 0.2s ease;
   font-size: 24px;
-  color: #e5e5e5;
+  color: var(--tg-primary);
 }
-html[data-site=landing] > body > header > .heading > .cta > i:hover {
+html[data-site=landing] > body > header > .cta > i:hover {
   cursor: pointer;
   color: var(--accent);
 }
@@ -123,15 +89,19 @@ html[data-site=landing] > body > .hero {
   width: 100vw;
 }
 html[data-site=landing] > body > .hero > .container {
-  background-color: rgba(0, 0, 0, 0.7);
-  align-content: center;
-  padding: 0px 8vw;
+  grid-template-columns: 100%;
+  grid-template-rows: 12vh 2fr auto;
+  background-color: rgba(var(--bg-primary-rgb), var(--bg-opacity));
+  flex-direction: column;
+  padding: 0 8vw;
   display: grid;
-  height: inherit;
+  height: 100%;
   width: 100vw;
 }
 html[data-site=landing] > body > .hero > .container > .headline {
+  justify-content: center;
   flex-direction: column;
+  grid-row: 2;
   display: flex;
   gap: 32px;
 }
@@ -148,17 +118,35 @@ html[data-site=landing] > body > .hero > .container > .headline > .text > div > 
   color: var(--accent);
 }
 html[data-site=landing] > body > .hero > .container > .headline > .text > div > label {
+  font-weight: 300;
   font-size: 12px;
-  color: #aaaaaa;
+  color: var(--tg-primary);
 }
 html[data-site=landing] > body > .hero > .container > .headline > .text > h1 {
   font-size: 32px;
-  color: #e5e5e5;
+  color: var(--tg-primary);
 }
 html[data-site=landing] > body > .hero > .container > .headline > .text > h2 {
   font-weight: 500;
   font-size: 16px;
-  color: #e5e5e5;
+  color: var(--tg-primary);
+}
+html[data-site=landing] > body > .hero > .container > .headline > .info {
+  flex-direction: column;
+  display: flex;
+  gap: 8px;
+}
+html[data-site=landing] > body > .hero > .container > .headline > .info > div {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+html[data-site=landing] > body > .hero > .container > .headline > .info > div > i {
+  color: var(--accent);
+}
+html[data-site=landing] > body > .hero > .container > .headline > .info > div > label {
+  font-size: 12px;
+  color: var(--tg-primary);
 }
 html[data-site=landing] > body > .hero > .container > .headline > .cta {
   align-items: center;
@@ -177,8 +165,8 @@ html[data-site=landing] > body > .hero > .container > .headline > .cta > button 
   border: 2px solid var(--bg-primary);
   gap: 8px;
   color: var(--bg-primary);
-  border: 2px solid #e5e5e5;
-  color: #e5e5e5;
+  border: 2px solid var(--tg-primary);
+  color: var(--tg-primary);
 }
 html[data-site=landing] > body > .hero > .container > .headline > .cta > button:hover {
   background-color: var(--bg-primary);
@@ -186,40 +174,43 @@ html[data-site=landing] > body > .hero > .container > .headline > .cta > button:
   color: var(--accent);
 }
 html[data-site=landing] > body > .hero > .container > .headline > .cta > button:hover {
-  background-color: #e5e5e5;
+  background-color: var(--tg-primary);
 }
 html[data-site=landing] > body > .hero > .container > .headline > .cta > a {
   text-decoration: none;
   transition: 0.2s ease;
   font-size: 12px;
-  color: #e5e5e5;
+  color: var(--tg-primary);
 }
 html[data-site=landing] > body > .hero > .container > .headline > .cta > a:hover {
   color: var(--accent);
 }
-html[data-site=landing] > body > .hero > .info {
-  justify-content: space-between;
+html[data-site=landing] > body > .hero > .container > .readMore {
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  padding: 0 10vw;
+  grid-row: 3;
+  padding: 32px 8vw;
   display: flex;
+  gap: 8px;
 }
-html[data-site=landing] > body > .hero > .info > .details {
-  background-color: var(--bg-primary);
-  align-items: center;
-  display: flex;
-  height: 8vh;
-  gap: 32px;
-}
-html[data-site=landing] > body > .hero > .info > .details > div {
+html[data-site=landing] > body > .hero > .container > .readMore > .container {
+  flex-direction: column;
   align-items: center;
   display: flex;
-  gap: 16px;
+  gap: 8px;
 }
-html[data-site=landing] > body > .hero > .info > .details > div > i {
-  color: var(--accent);
-}
-html[data-site=landing] > body > .hero > .info > .details > div > label {
-  font-weight: 400;
+html[data-site=landing] > body > .hero > .container > .readMore > .container > label {
+  transition: 0.2s ease;
   font-size: 12px;
-  color: var(--tg-secondary);
+  color: var(--tg-primary);
+}
+html[data-site=landing] > body > .hero > .container > .readMore > .container > i {
+  transition: 0.2s ease;
+  font-size: 16px;
+  color: var(--tg-primary);
+}
+html[data-site=landing] > body > .hero > .container > .readMore > .container:hover > label, html[data-site=landing] > body > .hero > .container > .readMore > .container:hover > i {
+  cursor: pointer;
+  color: var(--accent);
 }/*# sourceMappingURL=index.css.map */
