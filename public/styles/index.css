@@ -124,6 +124,7 @@ html[data-site=landing] > body > .hero > .container > .headline > .text > div > 
   color: var(--tg-primary);
 }
 html[data-site=landing] > body > .hero > .container > .headline > .text > h1 {
+  font-weight: 700;
   font-size: 32px;
   color: var(--tg-primary);
 }
@@ -217,7 +218,7 @@ html[data-site=landing] > body > .hero > .container > .readMore > .container:hov
 }
 html[data-site=landing] > body > .services {
   flex-direction: column;
-  padding: 8vh 12vw;
+  padding: 12vh 12vw;
   display: flex;
   gap: 8vh;
 }
@@ -251,6 +252,7 @@ html[data-site=landing] > body > .services > .offers > .offer {
   flex-direction: column;
   min-width: 0;
   display: flex;
+  height: auto;
   gap: 32px;
 }
 html[data-site=landing] > body > .services > .offers > .offer > .headline > h4 {
@@ -305,5 +307,57 @@ html[data-site=landing] > body > .services > .offers > .offer > button:hover {
   color: var(--accent);
 }
 html[data-site=landing] > body > .services > .offers > .offer > button:hover {
+  background-color: var(--tg-primary);
+}
+html[data-site=landing] > body > .about {
+  background-image: url("/static/assets/webp/landing_about_bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 32vh;
+  width: 100vw;
+}
+html[data-site=landing] > body > .about > .container {
+  background-color: rgba(var(--bg-primary-rgb), var(--bg-opacity));
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 0 12vw;
+  display: flex;
+  height: 100%;
+  gap: 32px;
+}
+html[data-site=landing] > body > .about > .container > .headline > h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--tg-primary);
+}
+html[data-site=landing] > body > .about > .container > .headline > h3 {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--tg-primary);
+}
+html[data-site=landing] > body > .about > .container > button {
+  background-color: transparent;
+  border-radius: 4px;
+  align-items: center;
+  font-weight: 500;
+  transition: 0.2s ease;
+  font-size: 12px;
+  display: flex;
+  padding: 12px 32px 12px 32px;
+  border: 2px solid var(--bg-primary);
+  color: var(--bg-primary);
+  gap: 8px;
+  align-self: flex-start;
+  border: 2px solid var(--tg-primary);
+  color: var(--tg-primary);
+}
+html[data-site=landing] > body > .about > .container > button:hover {
+  background-color: var(--bg-primary);
+  cursor: pointer;
+  color: var(--accent);
+}
+html[data-site=landing] > body > .about > .container > button:hover {
   background-color: var(--tg-primary);
 }/*# sourceMappingURL=index.css.map */
