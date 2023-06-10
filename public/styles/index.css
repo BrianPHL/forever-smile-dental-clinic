@@ -93,7 +93,6 @@ html[data-site=landing] > body > .hero > .container {
   grid-template-columns: 100%;
   grid-template-rows: 12vh 2fr auto;
   background-color: rgba(var(--bg-primary-rgb), var(--bg-opacity));
-  flex-direction: column;
   padding: 0 12vw;
   display: grid;
   height: 100%;
@@ -360,4 +359,54 @@ html[data-site=landing] > body > .about > .container > button:hover {
 }
 html[data-site=landing] > body > .about > .container > button:hover {
   background-color: var(--tg-primary);
+}
+html[data-site=landing] > body > .testimonials {
+  flex-direction: column;
+  padding: 12vh 12vw;
+  display: flex;
+  gap: 8vh;
+}
+html[data-site=landing] > body > .testimonials > .headline {
+  flex-direction: column;
+  display: flex;
+}
+html[data-site=landing] > body > .testimonials > .headline > h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--tg-primary);
+}
+html[data-site=landing] > body > .testimonials > .headline > h3 {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--tg-primary);
+}
+html[data-site=landing] > body > .testimonials > .container {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  gap: 64px;
+}
+html[data-site=landing] > body > .testimonials > .container > .testimonial {
+  flex-direction: column;
+  display: flex;
+  gap: 32px;
+}
+html[data-site=landing] > body > .testimonials > .container > .testimonial > i {
+  font-size: 32px;
+  color: var(--accent);
+}
+html[data-site=landing] > body > .testimonials > .container > .testimonial > p {
+  font-weight: 400;
+  text-align: justify;
+  font-size: 14px;
+  color: var(--tg-secondary);
+}
+html[data-site=landing] > body > .testimonials > .container > .testimonial > .footing > h4 {
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--tg-primary);
+}
+html[data-site=landing] > body > .testimonials > .container > .testimonial > .footing > h5 {
+  font-weight: 300;
+  font-size: 10px;
+  color: var(--tg-primary);
 }/*# sourceMappingURL=index.css.map */
