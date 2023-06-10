@@ -238,21 +238,20 @@ html[data-site=landing] > body > .services > .headline > .heading > h3 {
 }
 html[data-site=landing] > body > .services > .headline > p {
   font-weight: 400;
+  text-align: justify;
   font-size: 14px;
   color: var(--tg-secondary);
 }
 html[data-site=landing] > body > .services > .offers {
   grid-template-columns: repeat(3, 1fr);
   display: grid;
-  gap: 32px;
+  gap: 64px;
 }
 html[data-site=landing] > body > .services > .offers > .offer {
   flex-direction: column;
-  flex-basis: 31.95%;
   min-width: 0;
   display: flex;
-  padding: 24px;
-  gap: 16px;
+  gap: 32px;
 }
 html[data-site=landing] > body > .services > .offers > .offer > .headline > h4 {
   font-weight: 500;
@@ -263,6 +262,18 @@ html[data-site=landing] > body > .services > .offers > .offer > .headline > h5 {
   font-weight: 300;
   font-size: 12px;
   color: var(--tg-primary);
+}
+html[data-site=landing] > body > .services > .offers > .offer > h5 {
+  font-weight: 300;
+  align-items: center;
+  font-size: 12px;
+  display: flex;
+  color: var(--tg-primary);
+  gap: 8px;
+}
+html[data-site=landing] > body > .services > .offers > .offer > h5 > i {
+  font-size: 16px;
+  color: var(--accent);
 }
 html[data-site=landing] > body > .services > .offers > .offer > p {
   text-overflow: ellipsis;

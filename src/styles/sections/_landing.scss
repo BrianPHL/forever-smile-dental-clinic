@@ -306,6 +306,7 @@ html[data-site="landing"] {
                 & > p {
 
                     font-weight: 400;
+                    text-align: justify;
                     font-size: 14px;
                     color: var(--tg-secondary);
 
@@ -317,16 +318,14 @@ html[data-site="landing"] {
 
                 grid-template-columns: repeat(3, 1fr);
                 display: grid;
-                gap: 32px;
+                gap: 64px;
 
                 & > .offer {
 
                     flex-direction: column;
-                    flex-basis: 31.95%;
                     min-width: 0;
                     display: flex;
-                    padding: 24px;
-                    gap: 16px;
+                    gap: 32px;
 
                     & > .headline {
 
@@ -343,6 +342,24 @@ html[data-site="landing"] {
                             font-weight: 300;
                             font-size: 12px;
                             color: var(--tg-primary);
+
+                        }
+
+                    }
+
+                    & > h5 {
+
+                        font-weight: 300;
+                        align-items: center;
+                        font-size: 12px;
+                        display: flex;
+                        color: var(--tg-primary);
+                        gap: 8px;
+
+                        & > i {
+
+                            font-size: 16px;
+                            color: var(--accent);
 
                         }
 
