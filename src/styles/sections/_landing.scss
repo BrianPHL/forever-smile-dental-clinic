@@ -380,8 +380,8 @@ html[data-site="landing"] {
                     & > button {
 
                         @include button-style;
-                        border: 2px solid var(--tg-primary);
                         align-self: flex-start;
+                        border: 2px solid var(--tg-primary);
                         color: var(--tg-primary);
 
                         &:hover {
@@ -530,6 +530,307 @@ html[data-site="landing"] {
                             font-weight: 300;
                             font-size: 10px;
                             color: var(--tg-primary);
+
+                        }
+
+                    }
+
+                }
+
+            }
+
+        }
+
+        & > .contact {
+
+            flex-direction: column;
+            padding: 12vh 12vw;
+            display: flex;
+            gap: 8vh;
+
+            & > .headline {
+
+                flex-direction: column;
+                display: flex;
+
+                & > h2 {
+
+                    font-weight: 700;
+                    font-size: 24px;
+                    color: var(--tg-primary);
+
+                }
+
+                & > h3 {
+
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: var(--tg-primary);
+
+                }
+
+            }
+
+            & > .container {
+
+                display: flex;
+                gap: 64px;
+
+                & > form {
+
+                    flex-direction: column;
+                    display: flex;
+                    width: 100%;
+                    gap: 32px;
+
+                    & > .wrapper {
+
+                        display: flex;
+                        gap: 16px;
+                        
+                        & > div {
+
+                            flex-direction: column;
+                            display: flex;
+                            width: 100%;
+                            gap: 8px;
+
+                            & > label {
+
+                                font-weight: 400;
+                                font-size: 12px;
+                                color: var(--tg-primary);
+
+                            }
+
+                            & > input {
+
+                                background-color: var(--bg-primary);
+                                border-radius: 4px;
+                                font-size: 12px;
+                                padding: 12px;
+                                border: 0;
+                                color: var(--tg-secondary);
+
+                            }
+
+                        }
+
+                    }
+
+                    & > .subject {
+
+                        flex-direction: column;
+                        display: flex;
+                        gap: 8px;
+
+                        & > label {
+
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: var(--tg-primary);
+
+                        }
+
+                        & > input {
+
+                            background-color: var(--bg-primary);
+                            border-radius: 4px;
+                            font-size: 12px;
+                            padding: 12px;
+                            border: 0;
+                            color: var(--tg-secondary);
+
+                        }
+
+                    }
+
+                    & > .message {
+
+                        flex-direction: column;
+                        display: flex;
+                        gap: 8px;
+
+                        & > label {
+
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: var(--tg-primary);
+
+                        }
+
+                        & > textarea {
+
+                            background-color: var(--bg-primary);
+                            border-radius: 4px;
+                            font-size: 12px;
+                            text-align: left;
+                            padding: 12px;
+                            height: 256px;
+                            border: 0;
+                            color: var(--tg-secondary);
+
+                        }
+
+                    }
+
+                    & > button {
+
+                        @include button-style;
+                        justify-content: center;
+                        border: 2px solid var(--tg-primary);
+                        color: var(--tg-primary);
+
+                        &:hover {
+
+                            background-color: var(--tg-primary);
+
+                        }
+
+                    }
+
+                }
+
+                & > .information {
+
+                    flex-direction: column;
+                    text-align: right;
+                    display: flex;
+                    width: 420px;
+                    gap: 32px;
+
+                    & > .headline {
+
+                        & > h3 {
+
+                            font-weight: 500;
+                            font-size: 16px;
+                            color: var(--tg-primary);
+
+                        }
+
+                        & > h4 {
+
+                            font-weight: 400;
+                            font-size: 14px;
+                            color: var(--tg-secondary);
+
+                        }
+
+                    }
+
+                    & > .location {
+
+
+                        & > h3 {
+
+                            justify-content: flex-end;
+                            align-items: center;
+                            font-weight: 500;
+                            font-size: 14px;
+                            display: flex;
+                            color: var(--tg-primary);
+                            gap: 8px;
+
+                            & > i {
+
+                                color: var(--accent);
+
+                            }
+
+                        }
+
+                        & > p {
+
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: var(--tg-secondary);
+
+                        }
+
+                    }
+
+                    & > .email {
+
+
+                        & > h3 {
+
+                            justify-content: flex-end;
+                            align-items: center;
+                            font-weight: 500;
+                            font-size: 14px;
+                            display: flex;
+                            color: var(--tg-primary);
+                            gap: 8px;
+
+                            & > i {
+
+                                color: var(--accent);
+
+                            }
+
+                        }
+
+                        & > p {
+
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: var(--tg-secondary);
+
+                        }
+
+                    }
+
+                    & > .phone {
+
+                        flex-grow: 1;
+                        
+                        & > h3 {
+
+                            justify-content: flex-end;
+                            align-items: center;
+                            font-weight: 500;
+                            font-size: 14px;
+                            display: flex;
+                            color: var(--tg-primary);
+                            gap: 8px;
+
+                            & > i {
+
+                                color: var(--accent);
+
+                            }
+
+                        }
+
+                        & > p {
+
+                            font-weight: 400;
+                            font-size: 12px;
+                            color: var(--tg-secondary);
+
+                        }
+
+                    }
+
+                    & > .cta {
+
+                        justify-content: flex-end;
+                        display: flex;
+                        gap: 8px;
+
+                        & > i {
+
+                            transition: 0.2s ease;
+                            font-size: 24px;
+                            color: var(--accent);
+
+                            &:hover {
+
+                                cursor: pointer;
+                                color: var(--accent-hover);
+
+                            }
 
                         }
 
